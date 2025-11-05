@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/atayaportfolio/static/css/main.e7e50a92.css",
+    "main.js": "/atayaportfolio/static/js/main.9a2fd90e.js",
+    "static/js/453.6264690d.chunk.js": "/atayaportfolio/static/js/453.6264690d.chunk.js",
+    "index.html": "/atayaportfolio/index.html",
+    "main.e7e50a92.css.map": "/atayaportfolio/static/css/main.e7e50a92.css.map",
+    "main.9a2fd90e.js.map": "/atayaportfolio/static/js/main.9a2fd90e.js.map",
+    "453.6264690d.chunk.js.map": "/atayaportfolio/static/js/453.6264690d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7e50a92.css",
+    "static/js/main.9a2fd90e.js"
+  ]
+}

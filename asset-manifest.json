@@ -1,17 +1,28 @@
 {
   "files": {
     "main.css": "/atayaportfolio/static/css/main.e7e50a92.css",
-    "main.js": "/atayaportfolio/static/js/main.0dc1d284.js",
+    "main.js": "/atayaportfolio/static/js/main.fd396afb.js",
     "static/js/453.6264690d.chunk.js": "/atayaportfolio/static/js/453.6264690d.chunk.js",
     "static/media/profile.png": "/atayaportfolio/static/media/profile.8085a88116fe3b1a9eb3.png",
+    "static/media/vscode.svg": "/atayaportfolio/static/media/vscode.5cc4bd71441239c888ded948e8c88803.svg",
+    "static/media/nodejs-logo-svgrepo-com.svg": "/atayaportfolio/static/media/nodejs-logo-svgrepo-com.9b464a9aee62c52faeebf257f69cad74.svg",
+    "static/media/typescript-svgrepo-com.svg": "/atayaportfolio/static/media/typescript-svgrepo-com.c0eb7115ca99c9b18ba0baf90f610f7d.svg",
     "static/media/react-svgrepo-com.svg": "/atayaportfolio/static/media/react-svgrepo-com.f57b349b4d9df56c9b48c916a8d5adfb.svg",
+    "static/media/html-5-logo-svgrepo-com.svg": "/atayaportfolio/static/media/html-5-logo-svgrepo-com.58e59d1efd7a7f00fcbde4f5712f3228.svg",
+    "static/media/php-svgrepo-com.svg": "/atayaportfolio/static/media/php-svgrepo-com.099cd051f27e93830fcdb7b1ac05bc40.svg",
+    "static/media/python-5.svg": "/atayaportfolio/static/media/python-5.e6d7dc739a91892bbf1f6262412046dd.svg",
+    "static/media/js-svgrepo-com.svg": "/atayaportfolio/static/media/js-svgrepo-com.fef7215d0d3e578f01ad70419d4c4308.svg",
+    "static/media/Figma_Symbol_0.svg": "/atayaportfolio/static/media/Figma_Symbol_0.a849f47245ad22151b3f68e9cd096d71.svg",
+    "static/media/git-icon-logo-svgrepo-com.svg": "/atayaportfolio/static/media/git-icon-logo-svgrepo-com.e91eb163f73eebdbc665d8748b36a8e4.svg",
+    "static/media/angular-icon.svg": "/atayaportfolio/static/media/angular-icon.e6ed573fa80c0dc1bf57730930ac0158.svg",
     "index.html": "/atayaportfolio/index.html",
+    "static/media/css-3.svg": "/atayaportfolio/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "main.e7e50a92.css.map": "/atayaportfolio/static/css/main.e7e50a92.css.map",
-    "main.0dc1d284.js.map": "/atayaportfolio/static/js/main.0dc1d284.js.map",
+    "main.fd396afb.js.map": "/atayaportfolio/static/js/main.fd396afb.js.map",
     "453.6264690d.chunk.js.map": "/atayaportfolio/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7e50a92.css",
-    "static/js/main.0dc1d284.js"
+    "static/js/main.fd396afb.js"
   ]
 }

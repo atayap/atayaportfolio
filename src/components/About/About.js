@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './About.scss';
+import profile from '../images/profile.png';
 
 const About = () => {
   const [currentRatingIndex, setCurrentRatingIndex] = useState(0);
@@ -137,7 +138,7 @@ const About = () => {
               {/* Foto Profile Kotak */}
               <div className="profile-image-container">
                 <img 
-                  src="/images/profile.png" 
+                  src={profile} 
                   alt="Ataya Fikri"
                   className="profile-image-rectangular"
                 />

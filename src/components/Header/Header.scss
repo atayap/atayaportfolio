@@ -1,0 +1,274 @@
+@import '../../styles/variables';
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba($black, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 0;
+  border-bottom: 1px solid $gray;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1002;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Desktop Menu
+.desktop-menu {
+  display: flex;
+  list-style: none;
+  gap: $spacing-lg;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: $accent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: $spacing-xs 0;
+  transition: color 0.3s ease;
+  position: relative;
+
+  &:hover {
+    color: $white;
+  }
+
+  &.active {
+    color: $white;
+  }
+}
+
+.underline {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $white;
+}
+
+// WhatsApp Link Styles
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #25D366;
+  color: white !important;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #128C7E;
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(37, 211, 102, 0.3);
+  }
+  
+  animation: pulse 3s infinite;
+}
+
+.whatsapp-icon {
+  font-size: 1rem;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.3);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+// Hamburger Menu Styles
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1002;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $white;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  &.hamburger--active {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  }
+}
+
+// PERBAIKAN: Mobile Overlay - lebih gelap
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+// PERBAIKAN: Mobile Menu - background solid #0a0a0a
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -10px;
+  width: 280px;
+  height: 100%;
+  background: #0a0a0a; // ← DIUBAH: solid color tanpa transparansi
+  padding: 80px 2rem 100rem;
+  border-left: 1px solid $gray;
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+// PERBAIKAN: Kembalikan style mobile nav link seperti semula (tanpa background individual)
+.mobile-nav-link {
+  background: none;
+  border: none;
+  color: $accent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba($gray, 0.3);
+
+  &:hover {
+    color: $white;
+  }
+
+  &.mobile-nav-link--active {
+    color: $white;
+    border-bottom: 2px solid $white;
+  }
+}
+
+.mobile-whatsapp-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: white !important;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  margin-top: auto;
+  
+  &:hover {
+    background-color: #128C7E;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  }
+}
+
+// Mobile Responsive
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 $spacing-sm;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+    width: 250px;
+    background: #0a0a0a; // ← konsisten di mobile kecil
+  }
+
+  .mobile-nav-link {
+    font-size: 1.1rem;
+  }
+
+  .mobile-whatsapp-link {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+}

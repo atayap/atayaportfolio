@@ -1,0 +1,321 @@
+@import '../../styles/variables';
+
+.about {
+  background: $dark-gray;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-content {
+  width: 100%;
+  max-width: 1200px;
+  
+  // JUDUL DI TENGAH
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: $white;
+    margin-bottom: $spacing-xl;
+    font-weight: 700;
+    
+    @media (max-width: $tablet) {
+      font-size: 2.5rem;
+      margin-bottom: $spacing-lg;
+    }
+    
+    @media (max-width: $mobile) {
+      font-size: 2rem;
+      margin-bottom: $spacing-md;
+    }
+  }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: $spacing-xl;
+  align-items: start;
+  justify-items: center;
+}
+
+.about-text {
+  text-align: left;
+  
+  p {
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: $spacing-md;
+    line-height: 1.8;
+    color: $accent;
+  }
+}
+
+.about-stats {
+  display: flex;
+  gap: $spacing-lg;
+  margin-top: $spacing-md;
+  justify-content: flex-start;
+}
+
+.stat {
+  text-align: center;
+  
+  h3 {
+    font-size: 2.5rem;
+    color: $white;
+    margin-bottom: $spacing-xs;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    color: $accent;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+}
+
+.about-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  overflow: visible;
+  
+  &:hover {
+    .profile-image-rectangular {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.profile-image-rectangular {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  display: block;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+// RATING CARD KECIL STYLES
+.rating-card-small {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(10, 10, 10, 0.95);
+  border-radius: 10px;
+  padding: 0.8rem;
+  width: 160px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.rating-content-small {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// PERBAIKAN: Country dan stars lebih dekat
+.rating-header-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem; // ← JARAK DIPERKECIL dari 0.5rem ke 0.2rem
+  margin-bottom: 0.3rem;
+  
+  .country-name {
+    color: $accent;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+}
+
+.rating-stars-small {
+  display: flex;
+  gap: 0.1rem;
+  justify-content: center;
+  
+  .star {
+    color: $gray;
+    font-size: 0.8rem;
+    line-height: 1;
+    
+    &.filled {
+      color: #ffd700;
+    }
+  }
+}
+
+.rating-info-small {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  align-items: center;
+}
+
+.client-name-small {
+  color: $white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.client-role-small {
+  color: $accent;
+  font-size: 0.65rem;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.rating-indicators-small {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.indicator-small {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: $gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &.active {
+    background: #ffd700;
+    transform: scale(1.3);
+  }
+  
+  &:hover {
+    background: $accent;
+  }
+}
+
+// Fallback jika gambar tidak ada
+.image-placeholder-rectangular {
+  width: 100%;
+  height: 400px;
+  background: $gray;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $accent;
+  font-size: 1.1rem;
+  border: 2px solid $light-gray;
+}
+
+// Responsive
+@media (max-width: $tablet) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+    text-align: center;
+  }
+  
+  .about-text {
+    text-align: center;
+    
+    p {
+      text-align: center;
+    }
+  }
+  
+  .about-stats {
+    justify-content: center;
+  }
+  
+  .profile-image-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .about-stats {
+    flex-direction: column;
+    gap: $spacing-md;
+    align-items: center;
+  }
+  
+  .profile-image-container {
+    max-width: 350px;
+  }
+  
+  .profile-image-rectangular {
+    height: 350px;
+  }
+  
+  .stat h3 {
+    font-size: 2rem;
+  }
+  
+  .rating-card-small {
+    bottom: 10px;
+    right: 10px;
+    width: 140px;
+    padding: 0.6rem;
+  }
+  
+  .client-name-small {
+    font-size: 0.7rem;
+  }
+  
+  .client-role-small {
+    font-size: 0.6rem;
+  }
+  
+  .rating-header-small {
+    .country-name {
+      font-size: 0.65rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image-container {
+    max-width: 300px;
+  }
+  
+  .profile-image-rectangular {
+    height: 300px;
+  }
+  
+  .rating-card-small {
+    width: 130px;
+    padding: 0.5rem;
+  }
+  
+  .rating-stars-small .star {
+    font-size: 0.7rem;
+  }
+  
+  .rating-header-small {
+    .country-name {
+      font-size: 0.6rem;
+    }
+  }
+}

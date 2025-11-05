@@ -1,0 +1,175 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  background: $black; // Fallback background
+  color: $white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// Reset & Base Styles
+html {
+  scroll-behavior: smooth;
+}
+
+// Global container
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+  width: 100%;
+}
+
+// Section base styles
+section {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+// HAPUS background dari #home karena sudah di handle di component
+#home {
+  background: transparent; // Biarkan component yang handle
+  text-align: center;
+  min-height: 100vh;
+  padding: 0;
+}
+
+#about {
+  background: $dark-gray;
+  min-height: 100vh;
+}
+
+#skills {
+  background: $black;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#projects {
+  background: $dark-gray;
+  text-align: center;
+  min-height: 100vh;
+}
+
+// Header fixed positioning
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba($black, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $gray;
+}
+
+// Main content adjustment
+main {
+  margin-top: 70px;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: $spacing-sm;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: $spacing-lg;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: $spacing-sm;
+  color: $accent;
+}
+
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background: transparent;
+  color: $white;
+  border: 2px solid $white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  min-width: 160px;
+  
+  &:hover {
+    background: $white;
+    color: $black;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.15);
+  }
+  
+  &-primary {
+    background: $white;
+    color: $black;
+    font-weight: 600;
+    
+    &:hover {
+      background: transparent;
+      color: $white;
+      border-color: $white;
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: $mobile) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: $spacing-md;
+  }
+  
+  .container {
+    padding: 0 $spacing-sm;
+  }
+  
+  section {
+    padding: 60px 0;
+    min-height: 90vh;
+  }
+  
+  main {
+    margin-top: 60px;
+  }
+  
+  #home {
+    min-height: 90vh;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    min-width: 140px;
+    font-size: 0.9rem;
+  }
+}

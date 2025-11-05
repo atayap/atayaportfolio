@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.footer {
+  background: $black;
+  padding: $spacing-lg 0;
+  border-top: 1px solid $gray;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-md;
+}
+
+.social-links {
+  display: flex;
+  gap: $spacing-md;
+}
+
+.social-link {
+  color: $accent;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.copyright {
+  color: $accent;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+// Responsive
+@media (max-width: 480px) {
+  .social-links {
+    gap: $spacing-sm;
+  }
+
+  .social-link {
+    font-size: 1.3rem;
+  }
+}

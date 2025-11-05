@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './About.scss';
-import profile from '../images/profile.png';
+import profile from '../About/profile.png';
 
 const About = () => {
   const [currentRatingIndex, setCurrentRatingIndex] = useState(0);

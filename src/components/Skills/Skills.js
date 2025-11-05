@@ -1,11 +1,12 @@
 import React from 'react';
 import './Skills.scss';
+import skill1 from '../Skills/images/skills/react-svgrepo-com.svg';
 
 const Skills = () => {
   const skills = [
     { 
       name: 'React.js', 
-      logo: '/images/skills/react-svgrepo-com.svg',
+      logo: {skill1},
       color: '#61DAFB'
     },
     { 

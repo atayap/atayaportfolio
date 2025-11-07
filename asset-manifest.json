@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atayaportfolio/static/css/main.4e74f5fb.css",
-    "main.js": "/atayaportfolio/static/js/main.0398921f.js",
+    "main.js": "/atayaportfolio/static/js/main.18050f74.js",
     "static/js/453.6264690d.chunk.js": "/atayaportfolio/static/js/453.6264690d.chunk.js",
     "static/media/profile.png": "/atayaportfolio/static/media/profile.8085a88116fe3b1a9eb3.png",
     "static/media/Project1.png": "/atayaportfolio/static/media/Project1.3c2b689c1cac8af1905b.png",
@@ -11,6 +11,7 @@
     "static/media/react-svgrepo-com.svg": "/atayaportfolio/static/media/react-svgrepo-com.f57b349b4d9df56c9b48c916a8d5adfb.svg",
     "static/media/html-5-logo-svgrepo-com.svg": "/atayaportfolio/static/media/html-5-logo-svgrepo-com.58e59d1efd7a7f00fcbde4f5712f3228.svg",
     "static/media/php-svgrepo-com.svg": "/atayaportfolio/static/media/php-svgrepo-com.099cd051f27e93830fcdb7b1ac05bc40.svg",
+    "static/media/laravel-2.svg": "/atayaportfolio/static/media/laravel-2.ba995bd47e3a7cc141cc1c9aaa1ac583.svg",
     "static/media/python-5.svg": "/atayaportfolio/static/media/python-5.e6d7dc739a91892bbf1f6262412046dd.svg",
     "static/media/js-svgrepo-com.svg": "/atayaportfolio/static/media/js-svgrepo-com.fef7215d0d3e578f01ad70419d4c4308.svg",
     "static/media/Figma_Symbol_0.svg": "/atayaportfolio/static/media/Figma_Symbol_0.a849f47245ad22151b3f68e9cd096d71.svg",
@@ -19,11 +20,11 @@
     "index.html": "/atayaportfolio/index.html",
     "static/media/css-3.svg": "/atayaportfolio/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "main.4e74f5fb.css.map": "/atayaportfolio/static/css/main.4e74f5fb.css.map",
-    "main.0398921f.js.map": "/atayaportfolio/static/js/main.0398921f.js.map",
+    "main.18050f74.js.map": "/atayaportfolio/static/js/main.18050f74.js.map",
     "453.6264690d.chunk.js.map": "/atayaportfolio/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e74f5fb.css",
-    "static/js/main.0398921f.js"
+    "static/js/main.18050f74.js"
   ]
 }

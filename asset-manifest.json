@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/atayaportfolio/static/css/main.4e74f5fb.css",
-    "main.js": "/atayaportfolio/static/js/main.5ae9b597.js",
+    "main.js": "/atayaportfolio/static/js/main.9da05b95.js",
     "static/js/453.6264690d.chunk.js": "/atayaportfolio/static/js/453.6264690d.chunk.js",
     "static/media/profile.png": "/atayaportfolio/static/media/profile.8085a88116fe3b1a9eb3.png",
+    "static/media/Project2.png": "/atayaportfolio/static/media/Project2.531cfcbf4b6f00812317.png",
     "static/media/Project1.png": "/atayaportfolio/static/media/Project1.3c2b689c1cac8af1905b.png",
     "static/media/vscode.svg": "/atayaportfolio/static/media/vscode.5cc4bd71441239c888ded948e8c88803.svg",
     "static/media/nodejs-logo-svgrepo-com.svg": "/atayaportfolio/static/media/nodejs-logo-svgrepo-com.9b464a9aee62c52faeebf257f69cad74.svg",
@@ -20,11 +21,11 @@
     "index.html": "/atayaportfolio/index.html",
     "static/media/css-3.svg": "/atayaportfolio/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "main.4e74f5fb.css.map": "/atayaportfolio/static/css/main.4e74f5fb.css.map",
-    "main.5ae9b597.js.map": "/atayaportfolio/static/js/main.5ae9b597.js.map",
+    "main.9da05b95.js.map": "/atayaportfolio/static/js/main.9da05b95.js.map",
     "453.6264690d.chunk.js.map": "/atayaportfolio/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e74f5fb.css",
-    "static/js/main.5ae9b597.js"
+    "static/js/main.9da05b95.js"
   ]
 }

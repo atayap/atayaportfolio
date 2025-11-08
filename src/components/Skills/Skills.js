@@ -13,6 +13,8 @@ import gitLogo from './images/git-icon-logo-svgrepo-com.svg';
 import figmaLogo from './images/Figma_Symbol_0.svg';
 import vscodeLogo from './images/vscode.svg';
 import laravel from './images/laravel-2.svg';
+import xampp from './images/xampp-seeklogo.svg';
+import mysql from './images/mysql-logo-svgrepo-com.svg';
 
 const Skills = () => {
   const skills = [
@@ -79,6 +81,16 @@ const Skills = () => {
     { 
       name: 'Laravel', 
       logo: laravel,
+      color: '#007ACC'
+    },
+    { 
+      name: 'Xampp', 
+      logo: xampp,
+      color: '#007ACC'
+    },
+    { 
+      name: 'MySQL', 
+      logo: mysql,
       color: '#007ACC'
     }
   ];

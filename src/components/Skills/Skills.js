@@ -1,67 +1,84 @@
 import React from 'react';
 import './Skills.scss';
-import skill1 from '../Skills/images/skills/react-svgrepo-com.svg';
+import reactlogo from './images/react-svgrepo-com.svg';
+import htmlLogo from './images/html-5-logo-svgrepo-com.svg';
+import cssLogo from './images/css-3.svg';
+import jsLogo from './images/js-svgrepo-com.svg';
+import pythonLogo from './images/python-5.svg';
+import nodeLogo from './images/nodejs-logo-svgrepo-com.svg';
+import angularLogo from './images/angular-icon.svg';
+import tsLogo from './images/typescript-svgrepo-com.svg';
+import phpLogo from './images/php-svgrepo-com.svg';
+import gitLogo from './images/git-icon-logo-svgrepo-com.svg';
+import figmaLogo from './images/Figma_Symbol_0.svg';
+import vscodeLogo from './images/vscode.svg';
+import laravel from './images/laravel-2.svg';
 
 const Skills = () => {
   const skills = [
     { 
       name: 'React.js', 
-      logo: {skill1},
+      logo: reactlogo,
       color: '#61DAFB'
     },
     { 
       name: 'HTML', 
-      logo: '/images/skills/html-5-logo-svgrepo-com.svg',
+      logo: htmlLogo,
       color: '#E34F26'
     },
     { 
       name: 'CSS/SCSS', 
-      logo: '/images/skills/css-3.svg',
+      logo: cssLogo,
       color: '#1572B6'
     },
     { 
       name: 'JavaScript', 
-      logo: '/images/skills/js-svgrepo-com.svg',
+      logo: jsLogo,
       color: '#F7DF1E'
     },
     { 
       name: 'Python', 
-      logo: '/images/skills/python-5.svg',
+      logo: pythonLogo,
       color: '#3776AB'
     },
     { 
       name: 'Node.js', 
-      logo: '/images/skills/nodejs-logo-svgrepo-com.svg',
+      logo: nodeLogo,
       color: '#339933'
     },
     { 
       name: 'Angular', 
-      logo: '/images/skills/angular-icon.svg',
+      logo: angularLogo,
       color: '#DD0031'
     },
     { 
       name: 'TypeScript', 
-      logo: '/images/skills/typescript-svgrepo-com.svg',
+      logo: tsLogo,
       color: '#3178C6'
     },
     { 
       name: 'PHP', 
-      logo: '/images/skills/php-svgrepo-com.svg',
+      logo: phpLogo,
       color: '#777BB4'
     },
     { 
       name: 'Git', 
-      logo: '/images/skills/git-icon-logo-svgrepo-com.svg',
+      logo: gitLogo,
       color: '#F05032'
     },
     { 
       name: 'Figma', 
-      logo: '/images/skills/Figma_Symbol_0.svg',
+      logo: figmaLogo,
       color: '#F24E1E'
     },
     { 
       name: 'VS Code', 
-      logo: '/images/skills/vscode.svg',
+      logo: vscodeLogo,
+      color: '#007ACC'
+    },
+    { 
+      name: 'Laravel', 
+      logo: laravel,
       color: '#007ACC'
     }
   ];

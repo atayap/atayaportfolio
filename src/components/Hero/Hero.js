@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Hero.scss';
+import CV from './pdf/Ataya Fikri cv.pdf';
 
 const Hero = ({ scrollToSection }) => {
   const textVariants = {
@@ -92,7 +93,7 @@ const Hero = ({ scrollToSection }) => {
 
             <motion.button
               className="btn"
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={() => window.open(CV, '_blank')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
